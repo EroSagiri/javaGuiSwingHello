@@ -1,9 +1,9 @@
-import java.awt.FlowLayout
+package me.sagiri.java.swing.hello
+
 import java.awt.Font
 import javax.swing.JButton
 import javax.swing.JFrame
 import javax.swing.JLabel
-import kotlin.reflect.jvm.internal.impl.metadata.jvm.deserialization.JvmProtoBufUtil
 
 class Hello : JFrame {
     companion object {
@@ -62,6 +62,6 @@ class Hello : JFrame {
 }
 
 fun main() {
-    //Hello()
+    //me.sagiri.java.swing.hello.Hello()
     Hello()
 }
