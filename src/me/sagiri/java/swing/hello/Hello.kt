@@ -6,14 +6,13 @@ import javax.swing.JFrame
 import javax.swing.JLabel
 
 class Hello : JFrame {
-    companion object {
-        val defaultFont = Font("微软雅黑", Font.BOLD, 30)
-        val buttonFont = Font("微软雅黑", Font.PLAIN, 30)
-        val button1 = JButton("+1")
-        val button2 = JButton("+3")
-        val button3 = JButton("0")
-        val indexLabel = JLabel("0")
-    }
+    val defaultFont = Font("微软雅黑", Font.BOLD, 30)
+    val buttonFont = Font("微软雅黑", Font.PLAIN, 30)
+    val button1 = JButton("+1")
+    val button2 = JButton("+3")
+    val button3 = JButton("0")
+    val indexLabel = JLabel("0")
+
     var index = 0;
 
     constructor() : super() {
@@ -34,6 +33,7 @@ class Hello : JFrame {
         title = windowName
         setVisible(true)
         layout = null
+        defaultCloseOperation = JFrame.EXIT_ON_CLOSE
 
         button1.setBounds(20, 20, 100, 100)
         button2.setBounds(20, 130, 100, 100)
@@ -63,5 +63,6 @@ class Hello : JFrame {
 
 fun main() {
     //me.sagiri.java.swing.hello.Hello()
+    Hello()
     Hello()
 }
